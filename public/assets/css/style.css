@@ -1,0 +1,875 @@
+/********** HeyOne Template CSS - Purple Pink Theme **********/
+:root {
+  --primary: #7F00FF;
+  --secondary: #FFC0CB;
+  --accent: #C71585;
+  --dark: #1a1a1a;
+  --light: #f8f9fa;
+  --body: #6c757d;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*** Button ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+    border-radius: 50px;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: inherit;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--light);
+}
+
+/*** Text Colors ***/
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+/*** Navbar ***/
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.navbar.sticky-top {
+    position: fixed;
+    background: rgba(26, 26, 26, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(127, 0, 255, 0.1);
+    z-index: 9999;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 25px;
+    padding: 40px 0;
+    color: var(--light);
+    font-size: 17px;
+    text-transform: uppercase;
+    outline: none;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar.sticky-top .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link,
+    .navbar.bg-dark .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 8px;
+        border-top: 1px solid var(--light);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar.bg-dark .navbar-nav .nav-link {
+        padding: 20px 0;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/*** Header / Hero ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 100px;
+    background: linear-gradient(135deg, rgba(127, 0, 255, 0.9), rgba(199, 21, 133, 0.8));
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 550px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.page-header {
+    padding-top: 200px;
+    background: linear-gradient(rgba(127, 0, 255, 0.9), rgba(199, 21, 133, 0.8)), url(../img/carousel-1.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.page-header .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+
+/*** Title ***/
+.title {
+    margin-bottom: 2rem;
+}
+
+.title .title-left,
+.title .title-center,
+.title .title-right {
+    display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.title .title-center {
+    text-align: center;
+}
+
+.title .title-right {
+    text-align: right;
+}
+
+.title .title-left h5,
+.title .title-center h5,
+.title .title-right h5 {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+.title .title-left h5::after,
+.title .title-center h5::before,
+.title .title-center h5::after,
+.title .title-right h5::before {
+    position: absolute;
+    content: "";
+    width: 500%;
+    height: 0;
+    top: 9px;
+    border-bottom: 1px solid var(--primary);
+}
+
+.title .title-left h5::after,
+.title .title-center h5::after {
+    left: calc(100% + 15px);
+}
+
+.title .title-right h5::before,
+.title .title-center h5::before {
+    right: calc(100% + 15px);
+}
+
+.title .title-left h1,
+.title .title-center h1,
+.title .title-right h1 {
+    border-bottom: 1px solid var(--primary);
+    color: var(--dark);
+}
+
+/*** Stats Counter ***/
+.stats-item {
+    padding: 30px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.stats-item:hover {
+    transform: translateY(-10px);
+}
+
+.stats-item h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--light);
+}
+
+.stats-item p {
+    color: var(--secondary);
+    margin: 0;
+}
+
+/*** Service ***/
+.service-item {
+    position: relative;
+    margin-top: 2.5rem;
+    overflow: hidden;
+    background: var(--light);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(127, 0, 255, 0.1);
+}
+
+.service-item .service-img {
+    position: relative;
+    display: inline-block;
+}
+
+.service-item .service-img::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 12rem);
+    height: calc(100% - 12rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3rem solid rgba(127, 0, 255, 0.1);
+    border-radius: 300px;
+    z-index: 1;
+}
+
+.service-item.service-item-left {
+    border-radius: 500px 0 0 500px;
+    background: linear-gradient(to right, var(--secondary), var(--light));
+}
+
+.service-item.service-item-right {
+    border-radius: 0 500px 500px 0;
+    background: linear-gradient(to left, var(--secondary), var(--light));
+}
+
+@media (max-width: 767.98px) {
+    .service-item.service-item-left,
+    .service-item.service-item-right {
+        border-radius: 500px 500px 0 0;
+        background: linear-gradient(to bottom, var(--secondary), var(--light));
+        text-align: center;
+    }
+}
+
+/*** Maps Section ***/
+#map {
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(127, 0, 255, 0.2);
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.clinic-popup {
+    text-align: center;
+}
+
+.clinic-popup img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.clinic-popup h6 {
+    color: var(--primary);
+    margin: 5px 0;
+}
+
+.clinic-popup p {
+    color: var(--body);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/*** Team ***/
+.team-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(127, 0, 255, 0.1);
+}
+
+.team-item .team-name {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+.team-item .team-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-item .team-body .team-before,
+.team-item .team-body .team-after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: calc(100% - 60px);
+    top: 0;
+    left: 0;
+    background: rgba(127, 0, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team-item .team-body .team-after {
+    left: auto;
+    right: 0;
+}
+
+.team-item .team-body .team-before {
+    text-align: right;
+}
+
+.team-item:hover .team-body .team-before,
+.team-item:hover .team-body .team-after {
+    width: 50%;
+}
+
+.team-item .team-body .team-before span,
+.team-item .team-body .team-after span {
+    margin: 5px;
+    color: var(--light);
+    opacity: 0;
+    transition: .5s;
+}
+
+.team-item:hover .team-body .team-before span,
+.team-item:hover .team-body .team-after span {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+/*** Testimonial ***/
+.testimonial-carousel {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 35px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dots .owl-dot {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    padding: 10px;
+    background: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 100px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+.testimonial-carousel .owl-dots .owl-dot img {
+    opacity: .5;
+    transition: .5s;
+    border-radius: 100px;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active img {
+    opacity: 1;
+}
+
+/*** Footer ***/
+.footer {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/footer-bg.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: footerAnimatedBg 50s linear infinite;
+    opacity: 0.1;
+}
+
+@keyframes footerAnimatedBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1000px 0;
+    }
+}
+
+/*** Smooth Scroll ***/
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/*** Custom Animations ***/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Feature HeyONE */
+.feature-card {
+    border-radius: 1.25rem;
+    padding: 2.25rem 2.5rem; 
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all .25s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: black;
+}
+.feature-card h4:hover {
+    color: rgba(127, 0, 255, 0.95);
+}
+
+.feature-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left,
+        rgba(255, 0, 122, 0.18),
+        transparent 55%);
+    opacity: 0;
+    transition: opacity .25s ease;
+    pointer-events: none;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 0, 122, 0.5);
+}
+
+.feature-card:hover::after {
+    opacity: 1;
+}
+
+.feature-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.6rem; 
+}
+
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.75rem 0 0;
+    color: black;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 0.35rem;
+}
+
+.feature-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #ff0080; 
+    opacity: 0.85;
+}
+
+/* ==== PRICING SECTION ==== */
+
+.pricing-section {
+    background-color: none;
+}
+
+
+.pricing-card {
+    border-radius: 1.5rem;
+    padding: 2.4rem 2.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: all .25s ease;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(230, 230, 230, 0.95);
+}
+
+.pricing-card h3 {
+    margin-bottom: 0.15rem;
+    font-size: 1.6rem;
+    color: rgba(127, 0, 255, 0.95);
+}
+
+.pricing-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top center,
+        rgba(255, 0, 122, 0.18),
+        transparent 60%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 0, 122, 0.6);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.85);
+}
+
+.pricing-card:hover::before {
+    opacity: 1;
+}
+
+/* Badge kecil di pojok atas */
+.pricing-badge {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.6rem;
+    padding: 0.2rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(127, 0, 255, 0.95);
+}
+
+.badge-popular {
+    background: #ff0080;
+    color: #ffffff;
+    margin-left: 15rem;
+}
+
+/* Card tengah (Growth) lebih standout */
+.pricing-card.popular {
+    transform: translateY(-6px);
+    border-width: 2px;
+    border-color: #ff0080;
+    box-shadow: 0 26px 45px rgba(0, 0, 0, 0.9);
+}
+
+/* Icon bulat di atas */
+.pricing-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.1rem;
+    background: #ff0080;
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+
+/* Tagline kecil di bawah judul */
+.pricing-tagline {
+    margin-top: 0.15rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: rgba(127, 0, 255, 0.95);
+}
+
+/* Harga */
+.pricing-price {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+}
+
+.pricing-price .currency {
+    font-size: 1rem;
+    color: rgba(127, 0, 255, 0.95);
+}
+
+.pricing-price .amount {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color:rgba(127, 0, 255, 0.95);
+}
+
+.pricing-price .period {
+    font-size: 0.9rem;
+    color: rgba(127, 0, 255, 0.95);
+}
+
+/* List benefit */
+.pricing-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1.8rem;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: rgba(127, 0, 255, 0.95);
+    margin-bottom: 0.4rem;
+}
+
+.pricing-features li::before {
+    content: "\f00c"; /* Font Awesome check */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.75rem;
+    margin-right: 0.45rem;
+    margin-top: 0.15rem;
+    color: #ff0080;
+}
+
+/* Button spacing (dorong ke bawah) */
+.pricing-card .btn {
+    margin-top: auto;
+}
+
+/* Responsif: sedikit rapat di layar kecil */
+@media (max-width: 767.98px) {
+    .pricing-card {
+        padding: 2rem 1.6rem;
+    }
+}
+
+/* ====== TENTANG CAATIS / TEAM ====== */
+
+.about-caatis {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Kartu logo di kiri */
+.about-caatis-card {
+    border-radius: 1.75rem;
+    padding: 2.1rem 2.2rem; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-caatis-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left,
+        rgba(255, 0, 128, 0.22),
+        transparent 60%);
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+
+/* Bungkus logo */
+.about-caatis-logo-wrapper {
+    border-radius: 1.5rem;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-width: 140px;
+    min-height: 140px;
+}
+
+.about-caatis-logo-wrapper img {
+    max-height: 200px;
+    width: auto;
+    display: block;
+}
+
+
+/* Teks kecil di bawah logo */
+.about-caatis-tag {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(127, 0, 255, 0.95);
+}
+
+.about-caatis-subtag {
+    font-size: 0.9rem;
+    color: rgba(127, 0, 255, 0.95);
+}
+
+/* Responsif */
+@media (max-width: 991.98px) {
+    .about-caatis-card {
+        text-align: center;
+    }
+}
+
+.about-caatis-cta {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: right;   
+}
+
+.about-caatis-btn {
+    min-width: 260px;         
+}
+
