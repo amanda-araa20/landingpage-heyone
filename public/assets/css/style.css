@@ -639,6 +639,124 @@ section {
     opacity: 0.85;
 }
 
+/* Capsule tiap fitur */
+.service-item .row {
+    background: linear-gradient(135deg, #7b2cff 0%, #ff3ba7 100%); /* ungu → pink */
+    border-radius: 40px;
+    box-shadow: 0 18px 35px rgba(123, 44, 255, 0.25);
+    color: #ffffff;
+}
+
+/* supaya teks dalam kapsul otomatis putih */
+.service-text h3,
+.service-text p {
+    color: #ffffff;
+}
+
+/* Lingkaran icon */
+.feature-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16); /* transparan dikit supaya gradasi masih kelihatan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Besarkan icon-nya */
+.feature-circle i {
+    font-size: 4.2rem;
+    color: #ffffff;
+}
+
+/* Dorong lingkaran ke “ujung” kapsul */
+/* .service-item-left .feature-circle {
+    margin-left: -40px;
+}
+
+.service-item-right .feature-circle {
+    margin-right: -40px;
+    margin-left: auto;
+} */
+
+/* Mobile tweak */
+@media (max-width: 767.98px) {
+    .feature-circle {
+        width: 190px;
+        height: 190px;
+        margin: 0 auto 1.2rem auto;
+    }
+
+    /* .service-item-left .feature-circle,
+    .service-item-right .feature-circle {
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+    .service-text {
+        text-align: center !important;
+    }
+}
+
+.feature-desc {
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+/* Biar card-nya bisa “keluar” sedikit kalau perlu */
+.service-item .row {
+    overflow: visible;
+}
+
+/* Container gambar di kiri/kanan */
+.service-img {
+    padding: 2.5rem 3rem;          /* bisa kamu kecilkan kalau mau lebih mepet */
+    display: flex;
+    align-items: center;
+}
+
+/* Posisi circle */
+.service-item-left .service-img {
+    justify-content: flex-start;   /* nempel ke kiri, tapi tetap rapi */
+}
+
+.service-item-right .service-img {
+    justify-content: flex-end;     /* nempel ke kanan */
+}
+
+/* Circle tetap besar, tapi sekarang center dan nggak nyengsol */
+.feature-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-circle i {
+    font-size: 4.2rem;
+    color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .service-img {
+        justify-content: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .feature-circle {
+        width: 190px;
+        height: 190px;
+        margin: 0 auto 1.2rem auto;
+    }
+}
+
+
+
 /* ==== PRICING SECTION ==== */
 
 .pricing-section {

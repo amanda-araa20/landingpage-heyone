@@ -187,7 +187,123 @@
     <!-- About Section End -->
 
     <!-- Feature Start -->
-    <section>
+<section>
+    <div class="container-fluid feature py-5">
+        <div class="container py-5">
+
+            {{-- Heading --}}
+            <div class="text-center mb-5">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Our Fiture</h5>
+                        <h1>Fitur Utama HeyOne</h1>
+                    </div>
+                </div>
+                <p class="text-muted">
+                    Fitur-Fitur yang disediakan oleh HeyOne demi kenyamanan Anda
+                </p>
+            </div>
+
+            {{-- Fitur 1 - kiri (icon kiri, teks kanan) --}}
+            <div class="service-item service-item-left mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <div class="feature-circle d-flex align-items-center justify-content-center">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="mb-3">Manajemen Data Pelanggan</h3>
+                            <p class="feature-desc mb-0">
+                                HeyONE membantu klinik menyimpan data pemilik hewan dan hewan peliharaan dalam satu profil terstruktur,
+                                mulai dari identitas, kontak, hingga riwayat kunjungan dan lokasi. Dengan data yang rapi, staff tidak perlu
+                                mencari manual dan pelayanan ke pelanggan bisa lebih cepat dan konsisten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Fitur 2 - kanan (icon kanan, teks kiri) --}}
+            <div class="service-item service-item-right mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <div class="feature-circle d-flex align-items-center justify-content-center">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-start text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="mb-3">Manajemen Jadwal &amp; Appointment</h3>
+                            <p class="feature-desc mb-0">
+                                Dokter dan staff dapat mengatur jadwal praktik, menerima booking appointment online,
+                                serta meng-enroll dokter ke cabang klinik tertentu. Jadwal yang tersinkron otomatis
+                                membantu mengurangi bentrok jadwal dan memudahkan pelanggan memilih waktu yang paling sesuai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Fitur 3 - kiri --}}
+            <div class="service-item service-item-left mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5">
+                        <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
+                            <div class="feature-circle d-flex align-items-center justify-content-center">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                            <h3 class="mb-3">Manajemen Transaksi</h3>
+                            <p class="feature-desc mb-0">
+                                Setiap kunjungan tercatat sebagai rekam medis digital lengkap dengan riwayat vaksinasi, tindakan,
+                                dan transaksi pembayaran baik per item maupun total. Laporan keuangan dan riwayat perawatan dapat
+                                dipantau dengan rapi sehingga keputusan klinik bisa diambil berdasarkan data yang jelas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Fitur 4 - kanan --}}
+            <div class="service-item service-item-right mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-5 order-md-1 text-md-end">
+                        <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
+                            <div class="feature-circle d-flex align-items-center justify-content-center">
+                                <i class="fas fa-clinic-medical"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="service-text px-5 px-md-0 py-md-5 text-md-start text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                            <h3 class="mb-3">Multi-Klinik Support</h3>
+                            <p class="feature-desc mb-0">
+                                HeyONE mendukung banyak cabang klinik dalam satu sistem terpusat, sehingga pemilik usaha dapat
+                                memantau performa tiap cabang tanpa perlu berpindah aplikasi. Penempatan dokter ke klinik tertentu
+                                juga dapat diatur dengan mudah sehingga operasional antar cabang tetap terkontrol.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Feature End -->
+
+
+    <!-- Feature Start -->
+    <!-- <section>
         <div class="container-fluid feature py-5">
             <div class="container py-5">
 
@@ -284,7 +400,7 @@
             </div>
         </div>
     </section>
-    <!-- Feature End -->
+    Feature End -->
 
     <!-- Pricing Start -->
     <section>
