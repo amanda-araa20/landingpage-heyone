@@ -55,13 +55,18 @@
                 <div class="navbar-nav mx-auto p-4 p-lg-0">
                     <a href="#home" class="nav-item nav-link active">Home</a>
                     <a href="#about" class="nav-item nav-link">About</a>
-                    <a href="#stats" class="nav-item nav-link">Statistics</a>
-                    <a href="#clinics" class="nav-item nav-link">Our Clinics</a>
+                    <a href="#feature" class="nav-item nav-link">Features</a>
+                    <a href="#stats" class="nav-item nav-link">Stats</a>
+                    <a href="#map" class="nav-item nav-link">Our Clinics</a>
+                    <a href="#prices" class="nav-item nav-link">Prices</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex">
-                    <a class="btn btn-outline-primary border-2" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
+                    <a class="btn btn-outline-primary border-2" style="margin-right: 0.5rem;" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
                         Visit CAATIS
+                    </a>
+                    <a class="btn btn-outline-primary border-2" href="http://127.0.0.1:8001" target="_blank">
+                        Registrasi
                     </a>
                 </div>
             </div>
@@ -141,12 +146,11 @@
                           serta mengelola informasi pemilik dan pasien dengan mudah. HeyOne memiliki total
                            <strong style="color: #3B1E54;">{{ $totalClinics }} klinik</strong> terdaftar, dan terdapat <strong style="color: #3B1E54;">{{ $totalDoctors }} dokter hewan</strong> yang siap melayani 
                            kebutuhan kesehatan hewan peliharaan Anda. HeyOne juga sudah memiliki total <strong style="color: #3B1E54;">{{ $totalCustomers }} pengguna</strong> terdaftar dan
-                           <strong style="color: #3B1E54;">{{ $totalPets }} hewan peliharaan</strong> yang telah ditangani dengan penuh kasih sayang.
+                           <strong style="color: #3B1E54;">{{ $totalPets }} hewan peliharaan</strong> yang telah ditangani dengan penuh kasih sayang. Dari sisi klinik, HeyOne memberikan solusi lengkap untuk manajemen data pelanggan, jadwal praktek dokter, 
+                           rekam medis digital, hingga transaksi pembayaran yang terintegrasi.
                         </p>
 
                         <p class="mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                            Dari sisi klinik, HeyOne memberikan solusi lengkap untuk manajemen data pelanggan, jadwal praktek dokter, 
-                            rekam medis digital, hingga transaksi pembayaran yang terintegrasi.
                         </p>
                         <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.4s">
                             <li class="list-group-item bg-transparent text-body border-secondary ps-0">
@@ -187,7 +191,7 @@
     <!-- About Section End -->
 
     <!-- Feature Start -->
-<section>
+<section id="feature">
     <div class="container-fluid feature py-5">
         <div class="container py-5">
 
@@ -301,120 +305,151 @@
 </section>
 <!-- Feature End -->
 
-
-    <!-- Feature Start -->
-    <!-- <section>
-        <div class="container-fluid feature py-5">
-            <div class="container py-5">
-
-                {{-- Heading --}}
-                <div class="text-center mb-5">
-                    <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="title-center">
-                            <h5>Our Fiture</h5>
-                            <h1>Fitur Utama HeyOne</h1>
-                        </div>
+    <!-- Statistics Section Start -->
+    <section id="stats" class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Our Impact</h5>
+                        <h1>HeyOne dalam Angka</h1>
                     </div>
-                    <p class="text-muted">Fitur-Fitur yang disediakan oleh HeyOne demi kenyamanan Anda</p>
                 </div>
-
-                {{-- Cards Fitur --}}
-                <div class="row g-4">
-
-                    {{-- Fitur 1 --}}
-                    <div class="col-md-6 col-xl-6">
-                        <div class="feature-card h-100">
-                            <div class="d-flex align-items-start">
-                                <div class="feature-icon bg-primary me-3">
-                                    <i class="fas fa-users text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="mb-2">Manajemen Data Pelanggan</h4>
-                                    <ul class="feature-list mb-0">
-                                        <li>Simpan data customer (pemilik hewan)</li>
-                                        <li>Simpan lokasi dan data hewan peliharaan</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                <p class="text-muted">Kepercayaan dari pengguna adalah prioritas kami</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="stats-item text-center">
+                        <i class="fas fa-hospital fa-3x mb-3 text-white"></i>
+                        <h2 class="counter" data-target="{{ $totalClinics }}">0</h2>
+                        <p class="text-uppercase">Klinik Terdaftar</p>
                     </div>
-
-                    {{-- Fitur 2 --}}
-                    <div class="col-md-6 col-xl-6">
-                        <div class="feature-card h-100">
-                            <div class="d-flex align-items-start">
-                                <div class="feature-icon bg-primary me-3">
-                                    <i class="fas fa-calendar-check text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="mb-2">Manajemen Jadwal & Appointment</h4>
-                                    <ul class="feature-list mb-0">
-                                        <li>Booking appointment online</li>
-                                        <li>Jadwal praktek dokter</li>
-                                        <li>Enroll dokter ke klinik tertentu</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- Fitur 3 --}}
-                    <div class="col-md-6 col-xl-6">
-                        <div class="feature-card h-100">
-                            <div class="d-flex align-items-start">
-                                <div class="feature-icon bg-primary me-3">
-                                    <i class="fas fa-file-medical text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="mb-2">Manajemen Transaksi</h4>
-                                    <ul class="feature-list mb-0">
-                                        <li>Rekam medis digital</li>
-                                        <li>History vaksinasi</li>
-                                        <li>Transaksi pembayaran (item &amp; total)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- Fitur 4 --}}
-                    <div class="col-md-6 col-xl-6">
-                        <div class="feature-card h-100">
-                            <div class="d-flex align-items-start">
-                                <div class="feature-icon bg-primary me-3">
-                                    <i class="fas fa-clinic-medical text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="mb-2">Multi-Klinik Support</h4>
-                                    <ul class="feature-list mb-0">
-                                        <li>Kelola banyak cabang klinik dalam 1 sistem</li>
-                                        <li>Assign dokter ke klinik tertentu</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="stats-item text-center">
+                        <i class="fas fa-user-doctor fa-3x mb-3 text-white"></i>
+                        <h2 class="counter" data-target="{{ $totalDoctors }}">0</h2>
+                        <p class="text-uppercase">Dokter Hewan</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="stats-item text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-white"></i>
+                        <h2 class="counter" data-target="{{ $totalCustomers }}">0</h2>
+                        <p class="text-uppercase">Pelanggan Aktif</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="stats-item text-center">
+                        <i class="fas fa-paw fa-3x mb-3 text-white"></i>
+                        <h2 class="counter" data-target="{{ $totalPets }}">0</h2>
+                        <p class="text-uppercase">Hewan Terdaftar</p>
+                    </div>
+                </div>
+                <!-- <div class="container py-3">
+                    <div class="alert alert-warning">
+                        <strong>Debug Info:</strong><br>
+                        Total Pets dari Controller: {{ $totalPets }}<br>
+                        Jumlah array pets: {{ count($pets) }}<br>
+                        Data Pets: <pre>{{ print_r($pets, true) }}</pre>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
-    Feature End -->
+    <!-- Statistics Section End -->
 
-    <!-- Pricing Start -->
-    <section>
-        <div class="container-fluid pricing-section py-5">
+    <!-- Clinics Map Section Start -->
+    <section id="map" class="container-fluid py-5">
+        <div class="container py-5">
+            <!-- <div class="text-center mb-5">
+                <div class="title wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>Our Partners</h5>
+                        <h1>Klinik yang Menggunakan HeyOne</h1>
+                    </div>
+                </div>
+                <p class="text-muted">Temukan klinik hewan terpercaya di dekat Anda yang telah menggunakan HeyOne</p>
+            </div> -->
+            <div class="wow fadeInUp" data-wow-delay="0.3s">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Clinics Map Section End -->
+
+    <!-- CAATIS / Team Start -->
+    <!-- <section id="caatis">
+        <div class="container-fluid about-caatis py-5">
             <div class="container py-5">
 
                 <div class="text-center mb-5">
                     <div class="title wow fadeInUp" data-wow-delay="0.1s">
                         <div class="title-center">
-                            <h5>Our Prices</h5>
-                            <h1>Paket HeyOne untuk Klinik Hewan</h1>
+                            <h5>Our Team</h5>
+                            <h1>Tentang CAATIS</h1>
                         </div>
                     </div>
-                    <p class="text-muted">Pilih paket sesuai kebutuhan klinikmu. Semua paket sudah termasuk update & dukungan sistem.</p>
+                </div>
+                <div class="row g-4 align-items-center"> -->
+                    <!-- Kartu Logo CAATIS -->
+                    <!-- <div class="col-lg-5">
+                        <div class="about-caatis-card text-center text-lg-start">
+                            <div class="about-caatis-logo-wrapper mx-auto mx-lg-0 mb-3">
+                                {{-- ganti path logo sesuai file-mu --}}
+                                <img src="{{ asset('assets/img/logo-caatis.png') }}" alt="Logo CAATIS" class="img-fluid">
+                            </div>
+                            
+                            <strong>
+                                <p class="about-caatis-tag mb-1">
+                                    Center of Excellence – Technological Society
+                                </p>
+                                <p class="about-caatis-subtag mb-0">
+                                    Telkom University
+                                </p>
+                            </strong>
+                        </div>
+                    </div> -->
+
+                    <!-- Deskripsi CAATIS -->
+                    <!-- <div class="col-lg-7">
+                        <h1 class="display-5 mb-3" style="color: rgba(127, 0, 255, 0.95);">CAATIS sebagai Rumah Inovasi HeyOne</h1>
+
+                        <p class="mb-4" style="color:black; text-align: justify;">
+                            CAATIS (Center of Excellence – Technological Society) resmi berdiri pada 21 Desember 2022
+                            dan menghimpun peneliti dari tujuh fakultas di Telkom University untuk mendorong inovasi lintas
+                            disiplin. CAATIS mengelola laboratorium inovasi untuk riset, diskusi, pengukuran, dan kajian produk,
+                            laboratorium implementasi untuk penerapan dan pemanfaatan produk yang telah dikembangkan,
+                            memfasilitasi program pertukaran mahasiswa, serta menangani berbagai proyek eksternal bersama mitra
+                            industri dan institusi akademik.
+                        </p>
+
+                        <div class="about-caatis-cta">
+                            <a href="https://caatis.telkomuniversity.ac.id/" target="_blank" rel="noopener"
+                            class="btn btn-outline-primary about-caatis-btn">
+                                Kunjungi Website CAATIS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- CAATIS / Team End -->
+
+    <!-- Pricing Start -->
+    <section id="prices">
+        <div class="container-fluid pricing-section py-5" style="background: linear-gradient(135deg, var(--primary), var(--accent));">
+            <div class="container py-5">
+
+                <div class="text-center mb-5">
+                    <div class="title white wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="title-center">
+                            <h5 class="text-white">Our Prices</h5>
+                            <h1 class="text-white">Paket HeyOne untuk Klinik Hewan</h1>
+                        </div>
+                    </div>
+                    <p class="text-white">Pilih paket sesuai kebutuhan klinikmu. Semua paket sudah termasuk update & dukungan sistem.</p>
                 </div>
 
                 <div class="row g-4 align-items-stretch">
@@ -512,132 +547,8 @@
     </section>
     <!-- Pricing End -->
 
-    <!-- Statistics Section Start -->
-    <section id="stats" class="container-fluid py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="title-center">
-                        <h5>Our Impact</h5>
-                        <h1>HeyOne dalam Angka</h1>
-                    </div>
-                </div>
-                <p class="text-muted">Kepercayaan dari pengguna adalah prioritas kami</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="stats-item text-center">
-                        <i class="fas fa-hospital fa-3x mb-3 text-white"></i>
-                        <h2 class="counter" data-target="{{ $totalClinics }}">0</h2>
-                        <p class="text-uppercase">Klinik Terdaftar</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="stats-item text-center">
-                        <i class="fas fa-user-doctor fa-3x mb-3 text-white"></i>
-                        <h2 class="counter" data-target="{{ $totalDoctors }}">0</h2>
-                        <p class="text-uppercase">Dokter Hewan</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="stats-item text-center">
-                        <i class="fas fa-users fa-3x mb-3 text-white"></i>
-                        <h2 class="counter" data-target="{{ $totalCustomers }}">0</h2>
-                        <p class="text-uppercase">Pelanggan Aktif</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="stats-item text-center">
-                        <i class="fas fa-paw fa-3x mb-3 text-white"></i>
-                        <h2 class="counter" data-target="{{ $totalPets }}">0</h2>
-                        <p class="text-uppercase">Hewan Terdaftar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Statistics Section End -->
-
-    <!-- Clinics Map Section Start -->
-    <section id="clinics" class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="title-center">
-                        <h5>Our Partners</h5>
-                        <h1>Klinik yang Menggunakan HeyOne</h1>
-                    </div>
-                </div>
-                <p class="text-muted">Temukan klinik hewan terpercaya di dekat Anda yang telah menggunakan HeyOne</p>
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="0.3s">
-                <div id="map"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Clinics Map Section End -->
-
-    <!-- CAATIS / Team Start -->
-    <section id="caatis">
-        <div class="container-fluid about-caatis py-5">
-            <div class="container py-5">
-
-                <div class="text-center mb-5">
-                    <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="title-center">
-                            <h5>Our Team</h5>
-                            <h1>Tentang CAATIS</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center">
-                    <!-- Kartu Logo CAATIS -->
-                    <div class="col-lg-5">
-                        <div class="about-caatis-card text-center text-lg-start">
-                            <div class="about-caatis-logo-wrapper mx-auto mx-lg-0 mb-3">
-                                {{-- ganti path logo sesuai file-mu --}}
-                                <img src="{{ asset('assets/img/logo-caatis.png') }}" alt="Logo CAATIS" class="img-fluid">
-                            </div>
-                            
-                            <strong>
-                                <p class="about-caatis-tag mb-1">
-                                    Center of Excellence – Technological Society
-                                </p>
-                                <p class="about-caatis-subtag mb-0">
-                                    Telkom University
-                                </p>
-                            </strong>
-                        </div>
-                    </div>
-
-                    <!-- Deskripsi CAATIS -->
-                    <div class="col-lg-7">
-                        <h1 class="display-5 mb-3" style="color: rgba(127, 0, 255, 0.95);">CAATIS sebagai Rumah Inovasi HeyOne</h1>
-
-                        <p class="mb-4" style="color:black; text-align: justify;">
-                            CAATIS (Center of Excellence – Technological Society) resmi berdiri pada 21 Desember 2022
-                            dan menghimpun peneliti dari tujuh fakultas di Telkom University untuk mendorong inovasi lintas
-                            disiplin. CAATIS mengelola laboratorium inovasi untuk riset, diskusi, pengukuran, dan kajian produk,
-                            laboratorium implementasi untuk penerapan dan pemanfaatan produk yang telah dikembangkan,
-                            memfasilitasi program pertukaran mahasiswa, serta menangani berbagai proyek eksternal bersama mitra
-                            industri dan institusi akademik.
-                        </p>
-
-                        <div class="about-caatis-cta">
-                            <a href="https://caatis.telkomuniversity.ac.id/" target="_blank" rel="noopener"
-                            class="btn btn-outline-primary about-caatis-btn">
-                                Kunjungi Website CAATIS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CAATIS / Team End -->
-
     <!-- Contact/CTA Section Start -->
-    <section id="contact" class="container-fluid py-5 bg-light">
+    <section id="contact" class="container-fluid py-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -651,7 +562,7 @@
                         Kami siap membantu Anda meningkatkan kualitas layanan klinik hewan dengan sistem digital terpadu. 
                         Hubungi kami untuk demo gratis atau konsultasi.
                     </p>
-                    <div class="bg-white p-4 rounded shadow-sm">
+                    <div class="bg-white p-4 rounded shadow">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-envelope fa-2x text-primary me-3"></i>
                             <div>
@@ -670,7 +581,9 @@
                             <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
                             <div>
                                 <h6 class="mb-0">Address</h6>
-                                <p class="mb-0 text-muted">Telkom University, Bandung, Indonesia</p>
+                                <a href="https://maps.app.goo.gl/Bu3kS3unbbmLq6XV9" target="_blank" class="text-primary">
+                                    Telkom University, Bandung, Indonesia
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -795,84 +708,73 @@
             });
         });
 
-        // Leaflet Map - Updated Script
-        document.addEventListener('DOMContentLoaded', function() {
-            var clinics = @json($clinics ?? []);
-            console.log("Total clinics:", clinics.length);
-            console.log("Clinics data:", clinics);
-            
-            // Debug: Check logo URLs
-            clinics.forEach(function(clinic, index) {       
-                console.log('Clinic ' + (index + 1) + ':', {
-                    name: clinic.name,
-                    logo_url: clinic.clinic_logo_url,
-                    latitude: clinic.latitude,
-                    longitude: clinic.longitude
-                });
-            });
-        
-            // Initialize map centered on Bandung
-            var map = L.map('map').setView([-6.914744, 107.609810], 12);
-        
-            // Add tile layer
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {     
-                maxZoom: 19,
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-        
-            // Custom icon for clinic markers
-            var clinicIcon = L.icon({
-                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
-                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-                iconSize: [25, 41],
-                iconAnchor: [12, 41],
-                popupAnchor: [1, -34],
-                shadowSize: [41, 41]
-            });
-        
-            // Add markers for each clinic
-            clinics.forEach(function(clinic) {
-                if (clinic.latitude && clinic.longitude) {
-                    // Build popup content
-                    var logoHtml = '';
-                    if (clinic.clinic_logo_url) {
-                        logoHtml = `<img src="${clinic.clinic_logo_url}" 
-                                        alt="${clinic.name}" 
-                                        class="clinic-logo" 
-                                        onerror="this.style.display='none'; console.error('Logo failed to load:', '${clinic.clinic_logo_url}')">`;
-                    }
-                    
-                    var popupContent = `
-                        <div class="clinic-popup">
-                            ${logoHtml}
-                            <h6>${clinic.name || 'Nama tidak tersedia'}</h6>
-                            <p><i class="fas fa-map-marker-alt text-primary"></i> ${clinic.address || 'Alamat tidak tersedia'}</p>
-                            ${clinic.contact ? `<p><i class="fas fa-phone text-primary"></i> ${clinic.contact}</p>` : ''}
-                            ${clinic.email ? `<p><i class="fas fa-envelope text-primary"></i> ${clinic.email}</p>` : ''}
-                        </div>
-                    `;
-                    
-                    L.marker([clinic.latitude, clinic.longitude], { icon: clinicIcon })
-                        .addTo(map)
-                        .bindPopup(popupContent, {
-                            maxWidth: 300,
-                            minWidth: 200,
-                            className: 'custom-popup'
-                        });
-                }
-            });
-        
-            // Auto-fit bounds if there are clinics
-            if (clinics.length > 0) {
-                var validClinics = clinics.filter(c => c.latitude && c.longitude);
-                if (validClinics.length > 0) {
-                    var group = new L.featureGroup(
-                        validClinics.map(c => L.marker([c.latitude, c.longitude]))
-                    );
-                    map.fitBounds(group.getBounds().pad(0.1));
-                }
+        // Leaflet Map - Static Map (No Zoom, No Drag)
+document.addEventListener('DOMContentLoaded', function() {
+    var clinics = @json($clinics ?? []);
+    console.log("Total clinics:", clinics.length);
+    
+    // Initialize map centered on Bandung with ALL interactions disabled
+    var map = L.map('map', {
+        center: [-6.914744, 107.609810], // Center of Bandung
+        zoom: 13, // Fixed zoom level untuk cover Kota & Kabupaten Bandung
+        zoomControl: false,      // Disable zoom buttons
+        dragging: false,         // Disable dragging
+        touchZoom: false,        // Disable touch zoom
+        doubleClickZoom: false,  // Disable double click zoom
+        scrollWheelZoom: false,  // Disable scroll wheel zoom
+        boxZoom: false,          // Disable box zoom
+        keyboard: false,         // Disable keyboard navigation
+        tap: false               // Disable tap
+    });
+
+    // Add tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {     
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Custom icon for clinic markers
+    var clinicIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+        iconSize: [32, 51],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    // Add markers for each clinic
+    clinics.forEach(function(clinic) {
+        if (clinic.latitude && clinic.longitude) {
+            // Build popup content
+            var logoHtml = '';
+            if (clinic.clinic_logo_url) {
+                logoHtml = `<img src="${clinic.clinic_logo_url}" 
+                                alt="${clinic.name}" 
+                                class="clinic-logo" 
+                                onerror="this.style.display='none'">`;
             }
-        });
+            
+            var popupContent = `
+                <div class="clinic-popup">
+                    ${logoHtml}
+                    <h6>${clinic.name || 'Nama tidak tersedia'}</h6>
+                    <p><i class="fas fa-map-marker-alt text-primary"></i> ${clinic.address || 'Alamat tidak tersedia'}</p>
+                    ${clinic.contact ? `<p><i class="fas fa-phone text-primary"></i> ${clinic.contact}</p>` : ''}
+                    ${clinic.email ? `<p><i class="fas fa-envelope text-primary"></i> ${clinic.email}</p>` : ''}
+                </div>
+            `;
+            
+            L.marker([clinic.latitude, clinic.longitude], { icon: clinicIcon })
+                .addTo(map)
+                .bindPopup(popupContent, {
+                    maxWidth: 300,
+                    minWidth: 200,
+                    className: 'custom-popup'
+                });
+        }
+    });
+});
     </script>
 </body>
 </html>

@@ -288,6 +288,23 @@
     color: var(--dark);
 }
 
+.white .title-left h5::after,
+.white .title-center h5::before,
+.white .title-center h5::after,
+.white .title-right h5::before {
+    border-bottom: 1px solid white;
+}
+
+.white .title-left h1,
+.white .title-center h1,
+.white .title-right h1 {
+    border-bottom: 1px solid white;
+    color: var(--dark);
+}
+
+
+
+
 /*** Stats Counter ***/
 .stats-item {
     padding: 30px;
@@ -360,9 +377,19 @@
 
 /*** Maps Section ***/
 #map {
-    height: 500px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(127, 0, 255, 0.2);
+    height: 100vh; /* atau gunakan 100vh untuk full viewport height */
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    cursor: default !important;
+}
+
+/* Remove grab cursor from map */
+#map * {
+    cursor: default !important;
+}
+
+.leaflet-marker-icon {
+    cursor: pointer !important;
 }
 
 .leaflet-popup-content-wrapper {

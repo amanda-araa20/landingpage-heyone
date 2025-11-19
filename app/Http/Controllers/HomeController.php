@@ -40,9 +40,21 @@ class HomeController extends Controller
             $customersResponse = Http::withToken($h1Token)->get("{$petApi}/customers")->json();
             $customers = $customersResponse['data'] ?? [];
             
-            $petsResponse = Http::withToken($h1Token)->get("{$petApi}/pets")->json();
+            $petsResponse = Http::withToken($h1Token)->get("{$petApi}/pets?all=true")->json();
             $pets = $petsResponse['data'] ?? [];
 
+            Log::info('Pets Response:', ['response' => $petsResponse]);
+            Log::info('Total Pets:', ['count' => count($pets)]);
+            Log::info('Pets Data:', ['pets' => $pets]);
+            
+            // Handle berbagai struktur response
+            if (isset($petsResponse['data'])) {
+                $pets = is_array($petsResponse['data']) ? $petsResponse['data'] : [];
+            } else {
+                $pets = [];
+            }
+        
+        Log::info('Total pets found:', ['count' => count($pets)]);
             // Hitung total
             $totalClinics = is_array($clinics) ? count($clinics) : 0;
             $totalDoctors = is_array($doctors) ? count($doctors) : 0;
@@ -58,6 +70,8 @@ class HomeController extends Controller
         return view('index', compact(
             'clinics',
             'doctors',
+            'customers',
+            'pets',
             'totalClinics',
             'totalDoctors',
             'totalCustomers',
