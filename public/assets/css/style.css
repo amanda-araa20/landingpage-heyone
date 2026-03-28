@@ -1018,3 +1018,32 @@ section {
     min-width: 260px;         
 }
 
+/* Dropdown hover navbar */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+.dropdown-menu {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}

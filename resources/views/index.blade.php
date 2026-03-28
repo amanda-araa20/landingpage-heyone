@@ -65,9 +65,29 @@
                     <a class="btn btn-outline-primary border-2" style="margin-right: 0.5rem;" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
                         Visit CAATIS
                     </a>
-                    <a class="btn btn-outline-primary border-2" href="http://127.0.0.1:8001" target="_blank">
-                        Registrasi
-                    </a>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-primary border-2 dropdown-toggle"
+                           href="#"
+                           id="registrasiDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Registrasi
+                        </a>
+                    
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="registrasiDropdown">
+                            <li>
+                                <a class="dropdown-item" href="http://127.0.0.1:8001" target="_blank">
+                                    Registrasi Customer
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="http://127.0.0.1:8002" target="_blank">
+                                    Registrasi Clinic
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,7 +131,7 @@
                             Tingkatkan efisiensi dan kualitas layanan Anda hari ini.
                         </p>
                         <div class="animated slideInDown">
-                            <a href="#clinics" class="btn btn-primary border-2 py-3 px-5">Lihat Klinik Kami</a>
+                            <a href="#map" class="btn btn-primary border-2 py-3 px-5">Lihat Klinik Kami</a>
                         </div>
                     </div>
                 </div>
@@ -175,7 +195,7 @@
                                 <a href="#contact" class="btn btn-primary py-3 w-100">Request Demo</a>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <a href="#caatis" target="_blank" class="btn btn-outline-primary border-2 py-3 w-100">
+                                <a href="https://caatis.telkomuniversity.ac.id/" target="_blank" class="btn btn-outline-primary border-2 py-3 w-100">
                                     About CAATIS
                                 </a>
                             </div>
@@ -599,7 +619,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="bg-white p-5 rounded shadow">
-                        <h4 class="mb-4 text-primary">Request Demo atau Informasi</h4>
+                        <h4 class="mb-4 text-primary">Kontak Informasi</h4>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
