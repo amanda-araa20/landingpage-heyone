@@ -89,6 +89,18 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Mobile-only nav buttons -->
+                <div class="d-lg-none px-4 pb-3 d-flex flex-column gap-2">
+                    <a class="btn btn-outline-primary border-2 w-100" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
+                        Visit CAATIS
+                    </a>
+                    <a class="btn btn-outline-primary border-2 w-100" href="http://127.0.0.1:8001" target="_blank">
+                        Registrasi Customer
+                    </a>
+                    <a class="btn btn-outline-primary border-2 w-100" href="http://127.0.0.1:8002" target="_blank">
+                        Registrasi Clinic
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -101,18 +113,18 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="{{ asset('assets/img/carousel-1.jpg') }}" alt="HeyOne Hero">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="title mx-5 px-5 animated slideInDown">
+                        <div class="title mx-2 mx-md-5 px-2 px-md-5 animated slideInDown">
                             <div class="title-center">
                                 <h5 class="text-white">Welcome to HeyOne</h5>
                                 <h1 class="display-1 text-white">Solusi Digital Klinik Hewan</h1>
                             </div>
                         </div>
-                        <p class="fs-5 mb-5 text-white animated slideInDown">
-                            Platform terpadu untuk manajemen klinik hewan profesional.<br>
+                        <p class="fs-5 mb-5 text-white animated slideInDown px-3">
+                            Platform terpadu untuk manajemen klinik hewan profesional.<br class="d-none d-md-inline">
                             Kelola pasien, jadwal, transaksi, dan rekam medis dengan mudah.
                         </p>
-                        <div class="animated slideInDown">
-                            <a href="#about" class="btn btn-primary border-2 py-3 px-5 me-3">Pelajari Lebih Lanjut</a>
+                        <div class="animated slideInDown d-flex flex-wrap justify-content-center gap-2">
+                            <a href="#about" class="btn btn-primary border-2 py-3 px-5">Pelajari Lebih Lanjut</a>
                             <a href="#contact" class="btn btn-outline-light border-2 py-3 px-5">Hubungi Kami</a>
                         </div>
                     </div>
@@ -120,14 +132,14 @@
                 <div class="carousel-item">
                     <img class="w-100" src="{{ asset('assets/img/carousel-2.jpg') }}" alt="HeyOne Features">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="title mx-5 px-5 animated slideInDown">
+                        <div class="title mx-2 mx-md-5 px-2 px-md-5 animated slideInDown">
                             <div class="title-center">
                                 <h5 class="text-white">Trusted by Clinics</h5>
                                 <h1 class="display-1 text-white">Mudah, Cepat, Terpercaya</h1>
                             </div>
                         </div>
-                        <p class="fs-5 mb-5 text-white animated slideInDown">
-                            Bergabunglah dengan klinik-klinik terpercaya yang telah menggunakan HeyOne.<br>
+                        <p class="fs-5 mb-5 text-white animated slideInDown px-3">
+                            Bergabunglah dengan klinik-klinik terpercaya yang telah menggunakan HeyOne.<br class="d-none d-md-inline">
                             Tingkatkan efisiensi dan kualitas layanan Anda hari ini.
                         </p>
                         <div class="animated slideInDown">
@@ -161,12 +173,12 @@
                             </div>
                         </div>
                         <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s" style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px; text-align: justify;">
-                          <strong style="color: #3B1E54;">HeyOne</strong> adalah platform digital yang membantu klinik hewan, dokter,
+                          <strong style="color: #00596d;">HeyOne</strong> adalah platform digital yang membantu klinik hewan, dokter,
                           dan pemilik hewan peliharaan dalam mencatat data kesehatan hewan, memantau jadwal perawatan,
                           serta mengelola informasi pemilik dan pasien dengan mudah. HeyOne memiliki total
-                           <strong style="color: #3B1E54;">{{ $totalClinics }} klinik</strong> terdaftar, dan terdapat <strong style="color: #3B1E54;">{{ $totalDoctors }} dokter hewan</strong> yang siap melayani 
-                           kebutuhan kesehatan hewan peliharaan Anda. HeyOne juga sudah memiliki total <strong style="color: #3B1E54;">{{ $totalCustomers }} pengguna</strong> terdaftar dan
-                           <strong style="color: #3B1E54;">{{ $totalPets }} hewan peliharaan</strong> yang telah ditangani dengan penuh kasih sayang. Dari sisi klinik, HeyOne memberikan solusi lengkap untuk manajemen data pelanggan, jadwal praktek dokter, 
+                           <strong style="color: #00596d;">{{ $totalClinics }} klinik</strong> terdaftar, dan terdapat <strong style="color: #00596d;">{{ $totalDoctors }} dokter hewan</strong> yang siap melayani 
+                           kebutuhan kesehatan hewan peliharaan Anda. HeyOne juga sudah memiliki total <strong style="color: #00596d;">{{ $totalCustomers }} pengguna</strong> terdaftar dan
+                           <strong style="color: #00596d;">{{ $totalPets }} hewan peliharaan</strong> yang telah ditangani dengan penuh kasih sayang. Dari sisi klinik, HeyOne memberikan solusi lengkap untuk manajemen data pelanggan, jadwal praktek dokter, 
                            rekam medis digital, hingga transaksi pembayaran yang terintegrasi.
                         </p>
 
@@ -433,7 +445,7 @@
 
                     <!-- Deskripsi CAATIS -->
                     <!-- <div class="col-lg-7">
-                        <h1 class="display-5 mb-3" style="color: rgba(127, 0, 255, 0.95);">CAATIS sebagai Rumah Inovasi HeyOne</h1>
+                        <h1 class="display-5 mb-3" style="color: #01aed6;">CAATIS sebagai Rumah Inovasi HeyOne</h1>
 
                         <p class="mb-4" style="color:black; text-align: justify;">
                             CAATIS (Center of Excellence – Technological Society) resmi berdiri pada 21 Desember 2022
@@ -459,7 +471,7 @@
 
     <!-- Pricing Start -->
     <section id="prices">
-        <div class="container-fluid pricing-section py-5" style="background: linear-gradient(135deg, var(--primary), var(--accent));">
+        <div class="container-fluid pricing-section py-5" style="background: #01aed6;">
             <div class="container py-5">
 
                 <div class="text-center mb-5">
@@ -578,7 +590,7 @@
                             <h1>Tertarik Menggunakan HeyOne?</h1>
                         </div>
                     </div>
-                    <p class="mb-4" style="color: rgba(127, 0, 255, 0.95);">
+                    <p class="mb-4" style="color: #01aed6;">
                         Kami siap membantu Anda meningkatkan kualitas layanan klinik hewan dengan sistem digital terpadu. 
                         Hubungi kami untuk demo gratis atau konsultasi.
                     </p>
@@ -587,7 +599,7 @@
                             <i class="fas fa-envelope fa-2x text-primary me-3"></i>
                             <div>
                                 <h6 class="mb-0">Email</h6>
-                                <p class="mb-0 text-muted">heyone@caatis.id</p>
+                                <p class="mb-0 text-muted"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89e1ecf0e6e7ecc9eae8e8fde0faa7e0ed">[email&#160;protected]</a></p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-3">
@@ -691,7 +703,7 @@
     </a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
     <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
@@ -732,11 +744,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     var clinics = @json($clinics ?? []);
     console.log("Total clinics:", clinics.length);
+
+    // Bounds Kota Bandung + Kabupaten Bandung
+    var bandungBounds = L.latLngBounds(
+        L.latLng(-7.2500, 107.3500), // SW corner (Kabupaten Bandung Selatan)
+        L.latLng(-6.7500, 107.9000)  // NE corner (Kabupaten Bandung Utara)
+    );
     
     // Initialize map centered on Bandung with ALL interactions disabled
     var map = L.map('map', {
         center: [-6.914744, 107.609810], // Center of Bandung
-        zoom: 13, // Fixed zoom level untuk cover Kota & Kabupaten Bandung
+        zoom: 13, // Zoom level 11 untuk cover Kota & Kabupaten Bandung
+        minZoom: 13,
+        maxZoom: 13,
+        maxBounds: bandungBounds,
+        maxBoundsViscosity: 1.0,
         zoomControl: false,      // Disable zoom buttons
         dragging: false,         // Disable dragging
         touchZoom: false,        // Disable touch zoom
@@ -753,11 +775,12 @@ document.addEventListener('DOMContentLoaded', function() {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Custom icon for clinic markers
+    // Custom icon menggunakan CDN Leaflet resmi agar tidak hilang
     var clinicIcon = L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
+        iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-        iconSize: [32, 51],
+        iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
         shadowSize: [41, 41]
