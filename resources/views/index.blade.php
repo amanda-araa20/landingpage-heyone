@@ -65,7 +65,7 @@
                     <a class="btn btn-outline-primary border-2" style="margin-right: 0.5rem;" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
                         Visit CAATIS
                     </a>
-                    <div class="dropdown">
+                    <!-- <div class="dropdown">
                         <a class="btn btn-outline-primary border-2 dropdown-toggle"
                            href="#"
                            id="registrasiDropdown"
@@ -87,19 +87,19 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- Mobile-only nav buttons -->
                 <div class="d-xl-none px-4 pb-3 d-flex flex-column gap-2">
                     <a class="btn btn-outline-primary border-2 w-100" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
                         Visit CAATIS
                     </a>
-                    <a class="btn btn-outline-primary border-2 w-100" href="http://127.0.0.1:8001" target="_blank">
+                    <!-- <a class="btn btn-outline-primary border-2 w-100" href="http://127.0.0.1:8001" target="_blank">
                         Registrasi Customer
                     </a>
                     <a class="btn btn-outline-primary border-2 w-100" href="http://127.0.0.1:8002" target="_blank">
                         Registrasi Clinic
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -588,18 +588,18 @@
         </div>
         <div class="row g-3 justify-content-center wow fadeInUp" data-wow-delay="0.2s">
             <div class="col-12 col-sm-10 col-md-4">
-                <a href="#" class="btn-cta-custom btn-cta-solid w-100">
+                <a href="https://drive.google.com/drive/folders/1pEpHJjqd-QpEjhkl25Kti-PzDLs6DMh5" target="_blank" class="btn-cta-custom btn-cta-solid w-100">
                     <i class="fas fa-download me-2"></i>Download Aplikasi untuk Dokter
                 </a>
             </div>
             <div class="col-12 col-sm-10 col-md-4">
                 <a href="http://127.0.0.1:8001/register" target="_blank" class="btn-cta-custom btn-cta-outline w-100">
-                    <i class="fas fa-user-plus me-2"></i>Registrasi Customer
+                    <i class="fas fa-user-plus me-2"></i>Daftarkan Hewan Peliharaan Anda
                 </a>
             </div>
             <div class="col-12 col-sm-10 col-md-4">
-                <a href="http://127.0.0.1:8001/" target="_blank" class="btn-cta-custom btn-cta-outline w-100">
-                    <i class="fas fa-sign-in-alt me-2"></i>Login Customer
+                <a href="http://127.0.0.1:8002/register" target="_blank" class="btn-cta-custom btn-cta-outline w-100">
+                    <i class="fas fa-sign-in-alt me-2"></i>Daftarkan Klinik Anda
                 </a>
             </div>
         </div>
@@ -627,7 +627,7 @@
                             <i class="fas fa-envelope fa-2x text-primary me-3"></i>
                             <div>
                                 <h6 class="mb-0">Email</h6>
-                                <p class="mb-0 text-muted"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89e1ecf0e6e7ecc9eae8e8fde0faa7e0ed">[email&#160;protected]</a></p>
+                                <p class="mb-0 text-muted"><a href="mailto:caatis@telkomuniversity.ac.id" class="__cf_email__" data-cfemail="89e1ecf0e6e7ecc9eae8e8fde0faa7e0ed">caatis@telkomuniversity.ac.id</a></p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-3">

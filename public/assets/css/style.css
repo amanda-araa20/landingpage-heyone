@@ -155,7 +155,7 @@
         padding: 20px 0;
     }
 
-    .navbar .nav-item .dropdown-menu {
+    /* .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
         margin-top: 0;
@@ -170,16 +170,7 @@
         visibility: visible;
         transition: .5s;
         opacity: 1;
-    }
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
+    } */
 }
 
 /*** Header / Hero ***/
@@ -1053,26 +1044,35 @@ section {
     }
 }
 
+/* ===== DROPDOWN REGISTRASI ===== */
 .dropdown-menu {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.2s ease;
+    background-color: rgba(26, 26, 26, 0.95) !important;
+    border: 1px solid rgba(1, 174, 214, 0.3) !important;
+    border-radius: 10px !important;
+    padding: 0.5rem !important;
+    min-width: 180px !important;
+    /* Hapus animasi transform yang menyebabkan pergeseran */
+    transform: none !important;
+    transition: opacity 0.2s ease !important;
 }
 
+.dropdown-menu .dropdown-item {
+    color: var(--light) !important;
+    border-radius: 7px !important;
+    padding: 0.6rem 1rem !important;
+    font-size: 0.9rem !important;
+    transition: background 0.2s ease !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(1, 174, 214, 0.2) !important;
+    color: var(--primary) !important;
+}
+
+/* Hilangkan duplikat animasi yang menyebabkan dropdown bergeser */
 .navbar .dropdown:hover .dropdown-menu {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dropdown-menu {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.2s ease;
-}
-
-.navbar .dropdown:hover .dropdown-menu {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 /* ====== CTA BUTTONS SECTION ====== */
