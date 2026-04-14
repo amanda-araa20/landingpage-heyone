@@ -137,7 +137,7 @@
     padding: 20px 0;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1280px) {
     .navbar .navbar-nav .nav-link,
     .navbar.bg-dark .navbar-nav .nav-link {
         margin-right: 0;
@@ -685,6 +685,7 @@ section {
 .service-text h3,
 .service-text p {
     color: #ffffff;
+    font-size: 1.2rem;
 }
 
 /* Lingkaran icon */
@@ -1028,7 +1029,7 @@ section {
 }
 
 /* Responsif */
-@media (max-width: 991.98px) {
+@media (max-width: 1280px) {
     .about-caatis-card {
         text-align: center;
     }
@@ -1072,4 +1073,257 @@ section {
 .navbar .dropdown:hover .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ====== CTA BUTTONS SECTION ====== */
+.btn-cta-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #01aed6;
+    text-align: center;
+}
+
+.btn-cta-solid {
+    background: #01aed6;
+    color: #ffffff;
+}
+
+.btn-cta-solid:hover {
+    background: #0090b0;
+    border-color: #0090b0;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(1, 174, 214, 0.4);
+}
+
+.btn-cta-outline {
+    background: transparent;
+    color: #01aed6;
+}
+
+.btn-cta-outline:hover {
+    background: #01aed6;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(1, 174, 214, 0.4);
+}
+
+@media (max-width: 767.98px) {
+    .btn-cta-custom {
+        font-size: 0.88rem;
+        padding: 0.85rem 1.2rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* Sembunyikan tombol Visit CAATIS & Registrasi di tablet */
+    .navbar .d-none.d-lg-flex {
+        display: none !important;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE FIX MENYELURUH - semua device
+   ============================================================ */
+
+/* ===== TABLET FIX - Portrait & Landscape (768px - 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* --- HERO --- */
+    .carousel-caption h1.display-1 {
+        font-size: 2.8rem !important;
+    }
+    .carousel-caption .btn {
+        padding: 0.6rem 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* --- FEATURE SECTION --- */
+
+    /* Semua service-item: stack vertikal, icon selalu di atas */
+    .service-item .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        border-radius: 40px !important;
+        overflow: hidden !important;
+    }
+
+    /* Paksa SEMUA kolom dalam service-item jadi full width */
+    .service-item .row > [class*="col-"] {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        /* Reset order: icon (col-md-3) order 0, teks (col-md-9) order 1 */
+    }
+
+    /* Kolom icon (col-md-3) selalu di atas */
+    .service-item .row > .col-md-3 {
+        order: -1 !important;
+    }
+
+    /* Kolom teks (col-md-9) selalu di bawah */
+    .service-item .row > .col-md-9 {
+        order: 1 !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Service item wrapper */
+    .service-item.service-item-left,
+    .service-item.service-item-right {
+        border-radius: 40px !important;
+    }
+
+    /* Icon area: center, padding atas saja */
+    .service-img {
+        width: 100% !important;
+        padding: 2rem 1rem 0.5rem 1rem !important;
+        justify-content: center !important;
+        align-items: center !important;
+        display: flex !important;
+    }
+
+    /* Lingkaran luar (service-img::before) - sembunyikan di tablet */
+    .service-item .service-img::before {
+        display: none !important;
+    }
+
+    /* Lingkaran icon - ukuran konsisten */
+    .feature-circle {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 0 auto !important;
+        flex-shrink: 0 !important;
+    }
+
+    .feature-circle i {
+        font-size: 2.8rem !important;
+    }
+
+    /* Teks area */
+    .service-text {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0.75rem 2rem 2rem 2rem !important;
+    }
+
+    .service-text h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .service-text p {
+        font-size: 0.9rem !important;
+    }
+
+    /* --- PRICING --- */
+
+    /* Setiap card full width, ada jarak antar card */
+    #prices .col-md-6,
+    #prices .col-lg-4 {
+        width: 70% !important;
+        flex: 0 0 70% !important;
+        max-width: 70% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Popular card: hilangkan translateY */
+    .pricing-card.popular {
+        transform: none !important;
+    }
+
+    /* Row pricing: stack vertikal & center */
+    #prices .row.g-4 {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+/* --- MOBILE BESAR (576px - 767px) --- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Pricing: 1 kolom full di mobile */
+    .pricing-section .col-md-6 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Stats: 2 kolom */
+    .stats-section .col-md-6,
+    #stats .col-md-6 {
+        width: 50%;
+    }
+}
+
+/* --- MOBILE KECIL (< 576px) --- */
+@media (max-width: 575.98px) {
+
+    /* Hero: teks lebih kecil lagi di HP kecil */
+    .carousel-caption h1.display-1 {
+        font-size: 1.4rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .carousel-caption h5 {
+        font-size: 0.75rem !important;
+    }
+
+    .carousel-caption p {
+        font-size: 0.78rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .carousel-caption .btn {
+        padding: 0.4rem 1rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* Stats: 1 kolom full di HP kecil */
+    #stats .col-lg-3,
+    #stats .col-md-6 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Pricing: 1 kolom full */
+    .pricing-section .col-md-6,
+    .pricing-section .col-lg-4 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Popular card: hilangkan translateY agar tidak tumpang tindih */
+    .pricing-card.popular {
+        transform: none !important;
+    }
+
+    /* About section gambar */
+    .col-lg-5 img {
+        margin-top: 1.5rem;
+    }
+
+    /* Footer display-4 terlalu besar di HP kecil */
+    .footer .display-4 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Navbar brand */
+    .navbar-brand h2 {
+        font-size: 1.2rem !important;
+    }
 }

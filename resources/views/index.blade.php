@@ -41,7 +41,7 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark px-lg-5 py-3 sticky-top" id="mainNav">
+    <nav class="navbar navbar-expand-xl navbar-dark px-lg-5 py-3 sticky-top" id="mainNav">
         <div class="container-fluid">
             <a href="#home" class="navbar-brand ms-4 ms-lg-0">
                 <h2 class="mb-0 text-primary text-uppercase">
@@ -61,7 +61,7 @@
                     <a href="#prices" class="nav-item nav-link">Prices</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="d-none d-lg-flex">
+                <div class="d-none d-xl-flex">
                     <a class="btn btn-outline-primary border-2" style="margin-right: 0.5rem;" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
                         Visit CAATIS
                     </a>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <!-- Mobile-only nav buttons -->
-                <div class="d-lg-none px-4 pb-3 d-flex flex-column gap-2">
+                <div class="d-xl-none px-4 pb-3 d-flex flex-column gap-2">
                     <a class="btn btn-outline-primary border-2 w-100" href="https://caatis.telkomuniversity.ac.id/" target="_blank">
                         Visit CAATIS
                     </a>
@@ -243,15 +243,15 @@
             {{-- Fitur 1 - kiri (icon kiri, teks kanan) --}}
             <div class="service-item service-item-left mb-4">
                 <div class="row g-0 align-items-center">
-                    <div class="col-md-5">
+                    <div class="col-lg-3">
                         <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
                             <div class="feature-circle d-flex align-items-center justify-content-center">
                                 <i class="fas fa-users"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="col-lg-9">
+                        <div class="service-text px-5 px-lg-0 py-lg-5 wow fadeInRight" data-wow-delay="0.5s">
                             <h3 class="mb-3">Manajemen Data Pelanggan</h3>
                             <p class="feature-desc mb-0">
                                 HeyONE membantu klinik menyimpan data pemilik hewan dan hewan peliharaan dalam satu profil terstruktur,
@@ -266,15 +266,15 @@
             {{-- Fitur 2 - kanan (icon kanan, teks kiri) --}}
             <div class="service-item service-item-right mb-4">
                 <div class="row g-0 align-items-center">
-                    <div class="col-md-5 order-md-1 text-md-end">
+                    <div class="col-lg-3 order-lg-1 text-lg-end">
                         <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
                             <div class="feature-circle d-flex align-items-center justify-content-center">
                                 <i class="fas fa-calendar-check"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="service-text px-5 px-md-0 py-md-5 text-md-start text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="col-md-9">
+                        <div class="service-text px-5 px-lg-0 py-lg-5 text-lg-end wow fadeInLeft" data-wow-delay="0.5s">
                             <h3 class="mb-3">Manajemen Jadwal &amp; Appointment</h3>
                             <p class="feature-desc mb-0">
                                 Dokter dan staff dapat mengatur jadwal praktik, menerima booking appointment online,
@@ -289,15 +289,15 @@
             {{-- Fitur 3 - kiri --}}
             <div class="service-item service-item-left mb-4">
                 <div class="row g-0 align-items-center">
-                    <div class="col-md-5">
+                    <div class="col-lg-3">
                         <div class="service-img p-5 wow fadeInRight" data-wow-delay="0.2s">
                             <div class="feature-circle d-flex align-items-center justify-content-center">
                                 <i class="fas fa-file-medical"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="service-text px-5 px-md-0 py-md-5 wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="col-lg-9">
+                        <div class="service-text px-5 px-lg-0 py-lg-5 wow fadeInRight" data-wow-delay="0.5s">
                             <h3 class="mb-3">Manajemen Transaksi</h3>
                             <p class="feature-desc mb-0">
                                 Setiap kunjungan tercatat sebagai rekam medis digital lengkap dengan riwayat vaksinasi, tindakan,
@@ -312,15 +312,15 @@
             {{-- Fitur 4 - kanan --}}
             <div class="service-item service-item-right mb-4">
                 <div class="row g-0 align-items-center">
-                    <div class="col-md-5 order-md-1 text-md-end">
+                    <div class="col-lg-3 order-lg-1 text-lg-end">
                         <div class="service-img p-5 wow fadeInLeft" data-wow-delay="0.2s">
                             <div class="feature-circle d-flex align-items-center justify-content-center">
                                 <i class="fas fa-clinic-medical"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="service-text px-5 px-md-0 py-md-5 text-md-start text-md-end wow fadeInLeft" data-wow-delay="0.5s">
+                    <div class="col-md-9">
+                        <div class="service-text px-5 px-lg-0 py-lg-5 text-lg-end wow fadeInLeft" data-wow-delay="0.5s">
                             <h3 class="mb-3">Multi-Klinik Support</h3>
                             <p class="feature-desc mb-0">
                                 HeyONE mendukung banyak cabang klinik dalam satu sistem terpusat, sehingga pemilik usaha dapat
@@ -578,6 +578,34 @@
         </div>
     </section>
     <!-- Pricing End -->
+    
+<!-- CTA Buttons Section Start -->
+<section id="cta-buttons" class="py-5" style="background: #f0fbff;">
+    <div class="container py-3">
+        <div class="text-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <h2 style="color: #01aed6;">Mulai Gunakan HeyOne Sekarang</h2>
+            <p class="text-muted">Pilih aksi yang sesuai dengan kebutuhanmu</p>
+        </div>
+        <div class="row g-3 justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-12 col-sm-10 col-md-4">
+                <a href="#" class="btn-cta-custom btn-cta-solid w-100">
+                    <i class="fas fa-download me-2"></i>Download Aplikasi untuk Dokter
+                </a>
+            </div>
+            <div class="col-12 col-sm-10 col-md-4">
+                <a href="http://127.0.0.1:8001/register" target="_blank" class="btn-cta-custom btn-cta-outline w-100">
+                    <i class="fas fa-user-plus me-2"></i>Registrasi Customer
+                </a>
+            </div>
+            <div class="col-12 col-sm-10 col-md-4">
+                <a href="http://127.0.0.1:8001/" target="_blank" class="btn-cta-custom btn-cta-outline w-100">
+                    <i class="fas fa-sign-in-alt me-2"></i>Login Customer
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CTA Buttons Section End -->
 
     <!-- Contact/CTA Section Start -->
     <section id="contact" class="container-fluid py-5">
