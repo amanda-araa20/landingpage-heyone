@@ -2,9 +2,9 @@
 <html lang="id">
 <head>
     <meta charset="utf-8">
-    <title>HeyOne - Solusi Digital untuk Klinik Hewan Anda</title>
+    <title>JagaHewan - Solusi Digital untuk Klinik Hewan Anda</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="HeyOne, klinik hewan, pet clinic, veterinary, CAATIS" name="keywords">
+    <meta content="JagaHewan, klinik hewan, pet clinic, veterinary, CAATIS" name="keywords">
     <meta content="Platform digital terpadu untuk manajemen klinik hewan dan pet shop" name="description">
 
     <!-- Favicon -->
@@ -45,7 +45,7 @@
         <div class="container-fluid">
             <a href="#home" class="navbar-brand ms-4 ms-lg-0">
                 <h2 class="mb-0 text-primary text-uppercase">
-                    <i class="fas fa-paw me-2"></i>HeyOne
+                    <i class="fas fa-paw me-2"></i>JagaHewan
                 </h2>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -111,11 +111,11 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('assets/img/carousel-1.jpg') }}" alt="HeyOne Hero">
+                    <img class="w-100" src="{{ asset('assets/img/carousel-1.jpg') }}" alt="JagaHewan Hero">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="title mx-2 mx-md-5 px-2 px-md-5 animated slideInDown">
                             <div class="title-center">
-                                <h5 class="text-white">Welcome to HeyOne</h5>
+                                <h5 class="text-white">Welcome to JagaHewan</h5>
                                 <h1 class="display-1 text-white">Solusi Digital Klinik Hewan</h1>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('assets/img/carousel-2.jpg') }}" alt="HeyOne Features">
+                    <img class="w-100" src="{{ asset('assets/img/carousel-2.jpg') }}" alt="JagaHewan Features">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="title mx-2 mx-md-5 px-2 px-md-5 animated slideInDown">
                             <div class="title-center">
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <p class="fs-5 mb-5 text-white animated slideInDown px-3">
-                            Bergabunglah dengan klinik-klinik terpercaya yang telah menggunakan HeyOne.<br class="d-none d-md-inline">
+                            Bergabunglah dengan klinik-klinik terpercaya yang telah menggunakan JagaHewan.<br class="d-none d-md-inline">
                             Tingkatkan efisiensi dan kualitas layanan Anda hari ini.
                         </p>
                         <div class="animated slideInDown">
@@ -169,16 +169,16 @@
                         <div class="title wow fadeInUp" data-wow-delay="0.1s">
                             <div class="title-left">
                                 <h5>Tentang Kami</h5>
-                                <h1>Apa itu HeyOne?</h1>
+                                <h1>Apa itu JagaHewan?</h1>
                             </div>
                         </div>
                         <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s" style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px; text-align: justify;">
-                          <strong style="color: #00596d;">HeyOne</strong> adalah platform digital yang membantu klinik hewan, dokter,
+                          <strong style="color: #00596d;">JagaHewan</strong> adalah platform digital yang membantu klinik hewan, dokter,
                           dan pemilik hewan peliharaan dalam mencatat data kesehatan hewan, memantau jadwal perawatan,
-                          serta mengelola informasi pemilik dan pasien dengan mudah. HeyOne memiliki total
+                          serta mengelola informasi pemilik dan pasien dengan mudah. JagaHewan memiliki total
                            <strong style="color: #00596d;">{{ $totalClinics }} klinik</strong> terdaftar, dan terdapat <strong style="color: #00596d;">{{ $totalDoctors }} dokter hewan</strong> yang siap melayani 
-                           kebutuhan kesehatan hewan peliharaan Anda. HeyOne juga sudah memiliki total <strong style="color: #00596d;">{{ $totalCustomers }} pengguna</strong> terdaftar dan
-                           <strong style="color: #00596d;">{{ $totalPets }} hewan peliharaan</strong> yang telah ditangani dengan penuh kasih sayang. Dari sisi klinik, HeyOne memberikan solusi lengkap untuk manajemen data pelanggan, jadwal praktek dokter, 
+                           kebutuhan kesehatan hewan peliharaan Anda. JagaHewan juga sudah memiliki total <strong style="color: #00596d;">{{ $totalCustomers }} pengguna</strong> terdaftar dan
+                           <strong style="color: #00596d;">{{ $totalPets }} hewan peliharaan</strong> yang telah ditangani dengan penuh kasih sayang. Dari sisi klinik, JagaHewan memberikan solusi lengkap untuk manajemen data pelanggan, jadwal praktek dokter, 
                            rekam medis digital, hingga transaksi pembayaran yang terintegrasi.
                         </p>
 
@@ -215,7 +215,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.6s">
-                    <img class="img-fluid rounded" src="{{ asset('assets/img/about.png') }}" alt="About HeyOne">
+                    <img class="img-fluid rounded" src="{{ asset('assets/img/about.png') }}" alt="About JagaHewan">
                 </div>
             </div>
         </div>
@@ -232,11 +232,11 @@
                 <div class="title wow fadeInUp" data-wow-delay="0.1s">
                     <div class="title-center">
                         <h5>Our Fiture</h5>
-                        <h1>Fitur Utama HeyOne</h1>
+                        <h1>Fitur Utama JagaHewan</h1>
                     </div>
                 </div>
                 <p class="text-muted">
-                    Fitur-Fitur yang disediakan oleh HeyOne demi kenyamanan Anda
+                    Fitur-Fitur yang disediakan oleh JagaHewan demi kenyamanan Anda
                 </p>
             </div>
 
@@ -254,7 +254,7 @@
                         <div class="service-text px-5 px-lg-0 py-lg-5 wow fadeInRight" data-wow-delay="0.5s">
                             <h3 class="mb-3">Manajemen Data Pelanggan</h3>
                             <p class="feature-desc mb-0">
-                                HeyONE membantu klinik menyimpan data pemilik hewan dan hewan peliharaan dalam satu profil terstruktur,
+                                JagaHewan membantu klinik menyimpan data pemilik hewan dan hewan peliharaan dalam satu profil terstruktur,
                                 mulai dari identitas, kontak, hingga riwayat kunjungan dan lokasi. Dengan data yang rapi, staff tidak perlu
                                 mencari manual dan pelayanan ke pelanggan bisa lebih cepat dan konsisten.
                             </p>
@@ -323,7 +323,7 @@
                         <div class="service-text px-5 px-lg-0 py-lg-5 text-lg-end wow fadeInLeft" data-wow-delay="0.5s">
                             <h3 class="mb-3">Multi-Klinik Support</h3>
                             <p class="feature-desc mb-0">
-                                HeyONE mendukung banyak cabang klinik dalam satu sistem terpusat, sehingga pemilik usaha dapat
+                                JagaHewan mendukung banyak cabang klinik dalam satu sistem terpusat, sehingga pemilik usaha dapat
                                 memantau performa tiap cabang tanpa perlu berpindah aplikasi. Penempatan dokter ke klinik tertentu
                                 juga dapat diatur dengan mudah sehingga operasional antar cabang tetap terkontrol.
                             </p>
@@ -344,7 +344,7 @@
                 <div class="title wow fadeInUp" data-wow-delay="0.1s">
                     <div class="title-center">
                         <h5>Our Impact</h5>
-                        <h1>HeyOne dalam Angka</h1>
+                        <h1>JagaHewan dalam Angka</h1>
                     </div>
                 </div>
                 <p class="text-muted">Kepercayaan dari pengguna adalah prioritas kami</p>
@@ -398,10 +398,10 @@
                 <div class="title wow fadeInUp" data-wow-delay="0.1s">
                     <div class="title-center">
                         <h5>Our Partners</h5>
-                        <h1>Klinik yang Menggunakan HeyOne</h1>
+                        <h1>Klinik yang Menggunakan JagaHewan</h1>
                     </div>
                 </div>
-                <p class="text-muted">Temukan klinik hewan terpercaya di dekat Anda yang telah menggunakan HeyOne</p>
+                <p class="text-muted">Temukan klinik hewan terpercaya di dekat Anda yang telah menggunakan JagaHewan</p>
             </div> -->
             <div class="wow fadeInUp" data-wow-delay="0.3s">
                 <div id="map"></div>
@@ -445,7 +445,7 @@
 
                     <!-- Deskripsi CAATIS -->
                     <!-- <div class="col-lg-7">
-                        <h1 class="display-5 mb-3" style="color: #01aed6;">CAATIS sebagai Rumah Inovasi HeyOne</h1>
+                        <h1 class="display-5 mb-3" style="color: #01aed6;">CAATIS sebagai Rumah Inovasi JagaHewan</h1>
 
                         <p class="mb-4" style="color:black; text-align: justify;">
                             CAATIS (Center of Excellence – Technological Society) resmi berdiri pada 21 Desember 2022
@@ -478,7 +478,7 @@
                     <div class="title white wow fadeInUp" data-wow-delay="0.1s">
                         <div class="title-center">
                             <h5 class="text-white">Our Prices</h5>
-                            <h1 class="text-white">Paket HeyOne untuk Klinik Hewan</h1>
+                            <h1 class="text-white">Paket JagaHewan untuk Klinik Hewan</h1>
                         </div>
                     </div>
                     <p class="text-white">Pilih paket sesuai kebutuhan klinikmu. Semua paket sudah termasuk update & dukungan sistem.</p>
@@ -562,7 +562,7 @@
 
                             <ul class="pricing-features">
                                 <li>Klinik & dokter tanpa batas*</li>
-                                <li>Semua fitur HeyOne</li>
+                                <li>Semua fitur JagaHewan</li>
                                 <li>Prioritas support</li>
                                 <li>Pendampingan setup & training awal</li>
                             </ul>
@@ -583,7 +583,7 @@
 <section id="cta-buttons" class="py-5" style="background: #f0fbff;">
     <div class="container py-3">
         <div class="text-center mb-4 wow fadeInUp" data-wow-delay="0.1s">
-            <h2 style="color: #01aed6;">Mulai Gunakan HeyOne Sekarang</h2>
+            <h2 style="color: #01aed6;">Mulai Gunakan JagaHewan Sekarang</h2>
             <p class="text-muted">Pilih aksi yang sesuai dengan kebutuhanmu</p>
         </div>
         <div class="row g-3 justify-content-center wow fadeInUp" data-wow-delay="0.2s">
@@ -615,7 +615,7 @@
                     <div class="title">
                         <div class="title-left">
                             <h5>Contact Us</h5>
-                            <h1>Tertarik Menggunakan HeyOne?</h1>
+                            <h1>Tertarik Menggunakan JagaHewan?</h1>
                         </div>
                     </div>
                     <p class="mb-4" style="color: #01aed6;">
@@ -705,7 +705,7 @@
         <div class="container text-center py-5">
             <a href="#home">
                 <h1 class="display-4 mb-3 text-white text-uppercase">
-                    <i class="fas fa-paw me-2"></i>HeyOne
+                    <i class="fas fa-paw me-2"></i>JagaHewan
                 </h1>
             </a>
             <p class="text-white mb-4">
@@ -717,7 +717,7 @@
                 <a class="btn btn-lg-square btn-outline-light border-2 m-1" href="#"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-lg-square btn-outline-light border-2 m-1" href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <p class="text-white-50 mb-2">&copy; 2024 HeyOne. All Rights Reserved.</p>
+            <p class="text-white-50 mb-2">&copy; 2024 JagaHewan. All Rights Reserved.</p>
             <p class="text-white-50 mb-0">
                 Developed by <a class="text-white" href="https://caatis.telkomuniversity.ac.id/" target="_blank">CAATIS Telkom University</a>
             </p>
