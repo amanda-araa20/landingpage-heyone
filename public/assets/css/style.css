@@ -1,4 +1,4 @@
-/********** JagaHewan Template CSS - Purple Pink Theme **********/
+/********** HeiVet Template CSS - Purple Pink Theme **********/
 :root {
   --primary: #01aed6;
   --secondary: #FFC0CB;
@@ -581,7 +581,7 @@ section {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Feature JagaHewan */
+/* Feature HeiVet */
 .feature-card {
     border-radius: 1.25rem;
     padding: 2.25rem 2.5rem; 
