@@ -36,9 +36,9 @@ return [
     ],
 
     'kacirhi1' => [
-        'base_url' => env('KACIRH1_API_BASE_URL', 'http://127.0.0.1:9000/api'),
+        'base_url' => env('KACIRH1_API_BASE_URL', 'https://heivet-clinic-api.heivet.com/api'),
     ],
     'h1' => [
-        'base_url' => env('H1_API_BASE_URL', 'http://127.0.0.1:8000/api'),
+        'base_url' => env('H1_API_BASE_URL', 'https://heivet-customer-api.heivet.com/api'),
     ],
 ];

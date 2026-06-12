@@ -16,7 +16,7 @@ class HomeController extends Controller
         $kacirh1Token = env('KACIRH1_API_TOKEN');
 
         // Base URL untuk storage di heiwan-web-clinic
-        $clinicStorageUrl = env('KACIRHI1_STORAGE_URL', 'http://127.0.0.1:8002/storage/clinic_logos');
+        $clinicStorageUrl = rtrim(config('services.kacirhi1.base_url'), '/api') . '/storage/clinic_logos';
 
         try {
             // Panggil API klinik & dokter
